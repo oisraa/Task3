@@ -1,0 +1,424 @@
+/* Single Property Section */
+.single-property .container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start; /* Aligns items to the top */
+}
+
+.single-property .main-content {
+  flex: 1;
+  margin-bottom: 20px; /* Add some space below the content */
+}
+
+.single-property .main-image {
+  flex: 1;
+  margin-top: 30px; /* Lowers the image slightly */
+}
+
+.single-property .main-image img {
+  width: 90%;
+  height: auto;
+  margin-top: 40px;
+}
+
+
+.single-property .info-table {
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.15);
+  padding: 20px 15px; /* Reduced padding for a smaller box */
+  
+  margin-top: 70px; /* أضف هامش علوي لتنزيل المربع للأسفل */
+  max-width: 300px; /* Limit the width for a smaller box */
+  flex: 0 1 280px; /* Allow shrinking but maintain a base size */
+  
+}
+
+.single-property .info-table ul {
+  padding: 10px;
+  list-style: none;
+  margin: 0;
+}
+
+.single-property .info-table ul li {
+  display: flex;
+  align-items: center;
+  padding-bottom: 25px; /* Reduced spacing between items */ 
+  border-bottom: 1px solid #eee;
+  margin-bottom: 25px; /* Reduced margin between items */
+}
+
+.single-property .info-table ul li img {
+  max-width: 50px; /* Reduced icon size */
+  margin-right: 15px; /* Reduced spacing between icon and text */
+}
+
+.single-property .info-table ul li h4 {
+  font-size: 18px;
+  font-weight: 600;
+  margin: 0;
+}
+
+.single-property .info-table ul li h4 span {
+  font-size: 13px;
+  color: #aaa;
+  font-weight: 400;
+}
+.single-property .main-content span.category {
+  background-color: #fbd9cf;
+  font-weight: 500;
+  border-radius: 5px;
+  font-size: 14px;
+  color: #1e1e1e;
+  padding: 5px 12px;
+  display: inline-block;
+  margin-top: 40px;
+}
+.single-property .main-content h4 {
+  font-size: 25px;
+  margin-top: 25px;
+  margin-bottom: 40px;
+  padding-bottom: 40px;
+  border-bottom: 1px solid #eee;
+}
+p {
+  font-size: 14px;
+  line-height: 28px;
+  color: #4a4a4a;
+}
+a {
+  text-decoration: none !important;
+}
+/* .single-property .accordion {
+  margin-top: 60px;
+  margin-left: 0px;
+  margin-right: 0px;} */
+
+  .single-property .container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+  }
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  .single-property .main-content span.category {
+    background-color: #fbd9cf;
+    font-weight: 500;
+    border-radius: 5px;
+    font-size: 14px;
+    color: #1e1e1e;
+    padding: 5px 12px;
+    display: inline-block;
+    margin-top: 40px;
+  }
+  /* .single-property .accordion-button::after {
+    display: none;
+  }
+  .single-property .accordion-header {
+    border-bottom: 1px solid #eaeaea;
+  } */
+  /* Basic styling for the accordion container */
+/* Adjusted container class to ensure layout flexibility */
+.single-property .container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Main content styling to accommodate accordion */
+.single-property .main-content {
+  flex: 1;
+  margin-bottom: 20px;
+}
+
+/* Styling for the accordion */
+.accordion {
+  width: 100%; /* Take full width within the main content */
+  max-width: 600px; /* Limits width for readability */
+  border: 1px solid #f0eeee;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  margin-top: 20px; /* Adds some space above the accordion */
+background-color: #f0f0f0;
+}
+.accordion-item{
+  border-bottom: 1px solid #ddd;
+}
+.accordion-header{
+  margin: 0;
+  background-color: #f0f0f0;
+ 
+}
+.accordion-botton{
+  background-color: #f0f0f0;
+  color: rgb(255, 77, 0);
+  font-size: 1rem;
+ 
+  padding: 15px;
+  border: none;
+  text-align: left;
+  transition: background-color 0.3s ease;
+}
+.accordion-button {
+  background-color: #f0f0f0; /* Inherits grey background */
+  color: rgb(19, 19, 19); /* Orange color for questions */
+  font-size: 1rem;
+  
+  padding: 15px;
+  border: none;
+  text-align: left;
+  transition: background-color 0.3s ease;
+}
+
+/* Styling for the button when not collapsed */
+.accordion-button:not(.collapsed) {
+  color: rgb(255, 64, 0); /* Keeps the text color orange */
+  
+}
+
+/* Remove default focus shadow */
+.accordion-button:focus {
+  box-shadow: none;
+  outline: none;
+ 
+}
+
+/* Styling for the accordion content */
+.accordion-collapse {
+  transition: height 0.3s ease;
+}
+
+.accordion-body {
+  background-color: #f0f0f0; /* Matches the grey background of the accordion */
+  padding: 20px;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+.best-deal {
+  background-color: #fafafa;
+  padding: 100px 0px;
+}
+
+.section1 {
+  margin-top: 120px;
+}
+.section-heading1 {
+  margin-bottom: 70px;
+}
+.section-heading1 h6 {
+  color: #ee626b;
+  font-size: 15px;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+.section-heading1 h2 {
+  font-size: 40px;
+  font-weight: 700;
+  text-transform: capitalize;
+  margin-top: 20px;
+  line-height: 56px;
+}
+
+.section-container {
+  display: flex;
+  justify-content: space-between; 
+  align-items: center; 
+}
+
+
+.section-heading1 {
+  margin-right: 20px; 
+}
+
+
+.nav-wrapper {
+  display: flex; 
+  
+}
+
+.nav-tabs {
+  margin-bottom: 0; 
+  margin-left: 70px;
+  
+}
+
+.nav-link {
+  margin: 0 5px; 
+  padding: 10px 20px; 
+  border-radius: 5px; 
+  font-size: 16px;
+  font-weight: 500;
+  background-color: #1e1e1e !important;
+  border-radius: 5px;
+  height: 50px;
+  line-height: 50px;
+  display: inline-block;
+  padding: 0px 25px;
+  color: #fff;
+  
+}
+
+
+.nav-link.active {
+  background-color: #f35525 !important;
+  color: #fff;
+  
+}
+
+.row {
+  display: flex; 
+  gap: 20px; 
+}
+
+
+.info-table {
+  
+  flex: 1; 
+}
+
+
+img {
+  max-width: 100%; 
+  height: auto; 
+  flex: 2; 
+}
+
+
+.info-app {
+ 
+  flex: 1; 
+  
+}
+
+/* تنسيق الرابط */
+.icon-button a {
+  display: inline-flex;
+  align-items: center;
+  text-decoration: none;
+  color: inherit;
+}
+
+.icon-button i {
+  margin-right: 8px; 
+}
+.best-deal .info-table{
+  border-radius: 10px;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.15);
+  padding: 35px 30px;
+}
+::selection {
+  background: #0071f8;
+
+  color: #fff;
+
+}
+::selection {
+  background: #0071f8;
+
+  color: #fff;
+
+}
+
+.best-deal .info-table ul li {
+  display: block;
+
+  margin-bottom: 24px;
+
+  padding-bottom: 24px;
+
+  border-bottom: 1px solid #eee;
+
+  text-align: left;
+
+  font-size: 15px;
+
+  color: #aaa;
+
+  font-weight: 400;
+
+}
+.best-deal .info-table ul li span {
+  font-size: 20px;
+  color: #1e1e1e;
+  font-weight: 700;
+  float: right;
+  display: inline-block;
+}
+.best-deal .tabs-content h4 {
+  font-size: 17px;
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+p {
+  font-size: 14px;
+  line-height: 28px;
+  color: #4a4a4a;
+}
+
+
+.info-app {
+  flex: 1;
+}
+.best-deal .info-table ul li span {
+  font-size: 20px;
+  color: #1e1e1e;
+  font-weight: 700;
+  float: right;
+
+}
+.info-table .li{
+  display: block;
+  margin-bottom: 24px;
+  padding-bottom: 24px;
+  border-bottom: 1px solid #eee;
+  text-align: left;
+  font-size: 15px;
+  color: #aaa;
+  font-weight: 400;
+}
+.best-deal .info-table .li .span{
+  font-size: 20px;
+  color: #1e1e1e;
+  font-weight: 700;
+  float: right;
+}
+.best-deal .info-app h4 {
+  font-size: 17px;
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+.icon-button a {
+  display: inline-block;
+  background-color: #1e1e1e;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 400;
+  height: 50px;
+  line-height: 50px;
+  padding: 0px 30px 0px 0px;
+  border-radius: 25px;
+  transition: all .3s;
+}
+.icon-button a i {
+  background-color: #f35525;
+  height: 50px;
+  width: 50px;
+  text-align: center;
+  border-radius: 50%;
+  line-height: 50px;
+  display: inline-block;
+  margin-right: 15px;
+  margin-left: -1px;
+}
+.best-deal .icon-button {
+  margin-top: 30px;
+}
+.icon-button a:hover {
+  color: #f35525;
+}

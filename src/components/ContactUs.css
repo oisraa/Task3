@@ -1,0 +1,242 @@
+.page-heading {
+    background-image: url(/assets/images/page-heading-bg.jpg);
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 110px 0px;
+    text-align: center;
+}  
+
+.page-heading span {
+    background-color: #fff;
+    color: #1e1e1e;
+    font-size: 14px;
+    font-weight: 500;
+    text-transform: uppercase;
+    padding: 10px 25px;
+    display: inline-block;
+    margin-bottom: 30px;
+  }
+  .contact-page .section-heading {
+    margin-bottom: 40px;
+    margin-right: 591px;
+  }
+  .section-heading{
+    margin-top: 120px;
+  }
+  .page-heading h3{
+    font-size: 48px;
+    font-weight: 900;
+    text-transform: uppercase;
+    color: #fff;
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+  .section-heading h6{
+    color: #ee626b;
+    font-size: 15px;
+    text-transform: uppercase;
+    font-weight: 700;
+  }
+  .section-heading h2{
+    font-size: 40px;
+  font-weight: 700;
+  text-transform: capitalize;
+  margin-top: 20px;
+  line-height: 56px;
+  }
+  .contact-page .item{
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.15);
+    padding: 35px 30px;
+    background-color: #fff;
+   height: 65px;
+    width: 88% !important; 
+    margin-right: 50px;
+    /* background-image: url(/public/assets/images/phone-icon.png); */
+    background-repeat: no-repeat;
+    
+}
+.contact-page .item img {
+    float: left;
+    margin-right: 25px;
+}
+img{
+    width: 100%;
+    overflow: hidden;
+}
+.contact-page .phone{
+    margin-bottom: 30px;
+    
+}
+h6 {
+    color: #1e1e1e;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    
+  }
+.contact-page .item h6{
+    font-size: 20px;
+    font-weight: 600;
+
+
+}
+.contact-page .item h6 span {
+    font-size: 15px;
+    color: #aaaaaa;
+    font-weight: 400;
+  }
+  p {
+    font-size: 20px;
+    line-height: 28px;
+    color: #4a4a4a;
+  }
+  .contact-page p {
+    margin-bottom: 50px;
+  }
+  .contact-page #contact-form {
+    margin-left: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.15);
+    padding: 35px 30px;
+    background-color: #fff;
+    margin-bottom: 80px;
+    width: 200%;
+  }
+
+  .contact-content {
+    display: flex;
+    gap: 30px; /* Adjusts the space between the two sections */
+    flex-wrap: wrap; /* Ensures it wraps on smaller screens */
+  }
+  
+  .text-and-boxes {
+    flex: 1; /* This allows it to take up equal space with the form */
+  }
+  
+  .con-f {
+    flex: 1; /* This allows it to take up equal space with the boxes */
+  }
+  
+  .item {
+    margin-bottom: 20px; /* Space between phone and email items */
+  }
+  
+  #contact-form {
+    width: 100%;
+  }
+  
+  #contact-form .row {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  #contact-form fieldset {
+    margin-bottom: 15px;
+  }
+  
+/* Form Container */
+.con-f {
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+  }
+  
+  /* General input field and textarea styling */
+  .con-f input[type="text"],
+  .con-f input[type="name"],
+  .con-f input[type="subject"],
+  .con-f textarea {
+    width: 100%;
+    padding: 15px 12px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 25px;
+    background-color: #f9f9f9;
+    font-size: 16px;
+    color: #6c757d;
+   
+    /* box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.05); */
+  }
+  
+  /* Input focus state */
+  .con-f input[type="text"]:focus,
+  .con-f input[type="name"]:focus,
+  .con-f input[type="subject"]:focus,
+  .con-f textarea:focus {
+    background-color: #f1f1f1;
+    outline: none;
+  }
+  
+  /* Styling for the labels */
+  .con-f label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 14px;
+    color: #333;
+    font-weight: 600;
+  }
+  
+  /* Styling for the submit button */
+  .con-f button.orange-button {
+    width: 100%;
+    padding: 12px 0;
+    border-radius: 25px;
+    border: none;
+    background-color: #000;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+   
+    transition: background-color 0.3s ease;
+  }
+  
+  /* Hover state for the button */
+  .con-f button.orange-button:hover {
+    background-color: #ff5100;
+  }
+  
+  /* Individual Field Container */
+  .con-f .full-name,
+  .con-f .email-address,
+  .con-f .subject,
+  .con-f .message {
+    margin-bottom: 20px;
+  }
+  
+  /* Textarea Specific Styling */
+  .con-f textarea {
+    height: 150px;
+    resize: none;
+  }
+  
+  @media (min-width: 992px) {
+    .text-and-boxs {
+      flex: 0 0 auto;
+      width: 50%;
+    }
+    .con-f {
+        flex: 0 0 auto;
+        width: 50%;
+      }
+      .full-name{
+        flex: 0 0 auto;
+        width: 100%;
+      }
+      .contact-content .phone {
+        margin-right: 0px;
+        margin-bottom: 20px;
+      }
+      .contact-content .email {
+        margin-left: 0px;
+        margin-bottom: 45px;
+      }
+      .contact-content #contact-form {
+        margin-left: 0px;
+      }
+
+  }

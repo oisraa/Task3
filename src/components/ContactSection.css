@@ -1,0 +1,211 @@
+
+.contact-page .section-heading {
+    margin-bottom: 40px;
+    margin-right: 572px;
+  }
+  .section-heading{
+    margin-top: 120px;
+  }
+  
+  .section-heading h6{
+    color: #ee626b;
+    font-size: 15px;
+    text-transform: uppercase;
+    font-weight: 700;
+  }
+  .section-heading h2{
+    font-size: 40px;
+  font-weight: 700;
+  text-transform: capitalize;
+  margin-top: 20px;
+  line-height: 56px;
+  }
+  /* General Styling */
+.contact-page .item {
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.15);
+    padding: 35px 30px;
+    background-color: #fff;
+    height: 65px;
+    width: 70%;
+    background-repeat: no-repeat;
+  }
+  
+  .contact-page .item img {
+    float: left;
+    margin-right: 25px;
+  }
+  
+  img {
+    width: 100%;
+    overflow: hidden;
+  }
+  
+  .contact-page .phone {
+    margin-bottom: 30px;
+  }
+  
+  h6 {
+    color: #1e1e1e;
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+  
+  .contact-page .item h6 {
+    font-size: 20px;
+    font-weight: 600;
+  }
+  
+  .contact-page .item h6 span {
+    font-size: 15px;
+    color: #aaaaaa;
+    font-weight: 400;
+  }
+  
+  p {
+    font-size: 20px;
+    line-height: 28px;
+    color: #4a4a4a;
+  }
+  
+  .contact-page p {
+    margin-bottom: 50px;
+  }
+  
+  .contact-page #contact-form {
+    margin-left: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.15);
+    padding: 35px 30px;
+    background-color: #fff;
+    margin-bottom: 80px;
+  }
+  
+  /* Flexbox Layout for Responsiveness */
+  .contact-content {
+    display: flex;
+    gap: 30px; /* Space between the two sections */
+    flex-wrap: wrap; /* Wrap on smaller screens */
+    justify-content: space-between;
+  }
+  
+  .text-and-boxes, .con-f {
+    flex: 1;
+    min-width: 300px; /* Ensures elements stack on very small screens */
+  }
+  
+  /* Form Styling */
+  .con-f {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+  }
+  
+  .con-f input[type="text"],
+  .con-f input[type="name"],
+  .con-f input[type="subject"],
+  .con-f textarea {
+    width: 100%;
+    padding: 15px 12px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 25px;
+    background-color: #f9f9f9;
+    font-size: 16px;
+    color: #6c757d;
+  }
+  
+  .con-f input[type="text"]:focus,
+  .con-f input[type="name"]:focus,
+  .con-f input[type="subject"]:focus,
+  .con-f textarea:focus {
+    background-color: #f1f1f1;
+    outline: none;
+  }
+  
+  .con-f label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 14px;
+    color: #333;
+    font-weight: 600;
+  }
+  
+  .con-f button.orange-button {
+    width: 100%;
+    padding: 12px 0;
+    border-radius: 25px;
+    border: none;
+    background-color: #000;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .con-f button.orange-button:hover {
+    background-color: #ff5100;
+  }
+  
+  .con-f .full-name,
+  .con-f .email-address,
+  .con-f .subject,
+  .con-f .message {
+    margin-bottom: 20px;
+  }
+  
+  .con-f textarea {
+    height: 150px;
+    resize: none;
+  }
+
+  @media (max-width: 576px) {
+    .contact-page .item {
+      padding: 25px 20px;
+      width: 90%;
+    }
+  
+    .con-f input[type="text"],
+    .con-f input[type="name"],
+    .con-f input[type="subject"],
+    .con-f textarea {
+      font-size: 14px;
+      padding: 10px 8px;
+    }
+  
+    .con-f button.orange-button {
+      font-size: 14px;
+      padding: 10px 0;
+    }
+  }
+  
+/*   
+  @media (min-width: 992px) {
+    .text-and-boxs {
+      flex: 0 0 auto;
+      width: 50%;
+    }
+    .con-f {
+        flex: 0 0 auto;
+        width: 50%;
+      }
+      .full-name{
+        flex: 0 0 auto;
+        width: 100%;
+      }
+      .contact-content .phone {
+        margin-right: 0px;
+        margin-bottom: 20px;
+      }
+      .contact-content .email {
+        margin-left: 0px;
+        margin-bottom: 45px;
+      }
+      .contact-content #contact-form {
+        margin-left: 0px;
+      }
+
+  } */

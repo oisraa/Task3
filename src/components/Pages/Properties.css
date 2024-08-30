@@ -1,0 +1,148 @@
+.section-properties {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.properties {
+  display: flex;
+  justify-content: center;
+  margin-top: 70px;
+}
+
+.properties-filter {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap; /* Ensure buttons wrap on smaller screens */
+  gap: 15px; /* Space between buttons */
+  margin-bottom: 20px;
+  padding: 0;
+  list-style: none;
+}
+
+.properties-filter li {
+  margin: 0;
+}
+
+.properties-filter a {
+  display: inline-block;
+  background-color: #1e1e1e;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 500;
+  transition: background-color 0.3s;
+}
+
+.properties-filter a:hover {
+  background-color: #f35525; /* Hover effect */
+}
+.properties-filter a.is_active {
+  background-color: #fbd9cf;
+  color: #fff;
+}
+.properties ul.properties-filter {
+    list-style: none;
+    text-align: center;
+    margin-bottom: 70px;
+  }
+ul {
+    margin-bottom: 0px;
+  
+  }
+  ul, li {
+    padding: 0;
+  
+    margin: 0;
+}
+
+.properties ul.properties-filter li {
+    display: inline-block;
+    margin: 5px 8px;
+  }
+  li {
+    padding: 0;
+    margin: 0;
+    list-style: none;}
+
+.properties ul.properties-filter {
+    list-style: none;
+    text-align: center;
+    margin-bottom: 70px;
+  }
+  .properties ul.properties-filter li a.is_active {
+    background-color: #f35525;
+    color: #fff;
+  }
+  
+  .properties ul.properties-filter li a.is_active:hover {
+    color: #fff;
+  }
+  
+  .properties ul.properties-filter li a:hover {
+    color: #f35525;
+  }
+  .properties ul.properties-filter li a {
+    display: inline-block;
+    text-align: center;
+    font-size: 15px;
+    text-transform: capitalize;
+    font-weight: 500;
+    color: #fff;
+    background-color: #1e1e1e;
+    padding: 12px 25px;
+    border-radius: 5px;
+    transition: all .3s;
+  }
+  a {
+    text-decoration: none !important;
+  }
+  .section-properties ul.pagination {
+    margin-top: 50px;
+    text-align: center;
+    width: 100%;
+    display: inline-block;
+  }
+  .section-properties ul.pagination li {
+  display: inline-block;
+  margin: 0px 5px;
+}
+.section-properties ul.pagination li a {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  background-color: #1e1e1e;
+  color: #fff;
+  font-size: 15px;
+  font-weight: 600;
+  border-radius: 50%;
+  transition: all .3s;
+}
+a {
+  text-decoration: none !important;
+}
+.section-properties ul.pagination {
+  text-align: center;
+}
+/* Responsive design for filter buttons */
+@media (max-width: 768px) {
+  .properties-filter a {
+    padding: 8px 16px; /* Adjust padding for smaller screens */
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 480px) {
+  .properties-filter {
+    gap: 10px; /* Reduce space between buttons on small screens */
+  }
+  .properties-filter a {
+    padding: 6px 12px;
+    font-size: 12px;
+  }
+}
